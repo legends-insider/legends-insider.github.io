@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clash-Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  
+  <body>
+
+    <div class="main">
+      <div id="title" class="h1 text-center">Legends Insider</div>
+    </div>
+    <br> <br>
+    <div class="container-md form-container h2 text-center">
+      <div class="form-area row"> 
+        <br>
+        <div class="styleGroup col-sm-4 mt-4 mb-4">
+          Style
+          <div>
+            <label class="style-label"> <input type="checkbox" class="style-checkbox">Box</label>
+            <label class="style-label"> <input type="checkbox" class="style-checkbox">Ring</label>
+            <label class="style-label"> <input type="checkbox" class="style-checkbox">Diamond</label>
+            <label class="style-label"> <input type="checkbox" class="style-checkbox">Anti 3</label>
+          </div>
+        </div>
+        <br>
+        <div class="monthGroup col-sm-4 mt-4 mb-4">
+          Month
+        </div>
+        <br>
+        <div class="yearGroup col-sm-4 mt-4 mb-4">
+          Year
+        </div>
+        <br>
+      </div>
+    </div>
+
+
+    <main>
+        <h3 id="numBases">0 Bases</h3>
+        <div class="filters">
+          <div class="filterYear">
+            <h3>Year</h3>
+            <select id="dropYear">
+              <option>All</option>
+              <option value selected="selected">2024</option>
+            </select>
+          </div>
+          
+          <div class="filterMonth">
+            <h3>Month</h3>
+            <select id="dropMonth">
+              <option value="selected">All</option>
+              <option value selected="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+
+          <div class="filterStyle">
+            <h3>Style</h3>
+            <select id="dropStyle">
+              <option value selected="selected">All</option>
+              <option value="1">Box</option>
+              <option value="2">Ring</option>
+              <option value="3">Diamond</option>
+              <option value="4">Anti 3</option>
+            </select>
+          </div>
+
+          <div>
+            <button class="button-confirm">Search</button>
+          </div>
+
+        </div>
+
+        <!--
+        <div class="zap">
+          <h3>Zap Charts</h3>
+          <button id="btnMzap">Main Village Zap Chart</button>
+          <button id="btnCzap">Clan Capital Zap Chart</button>
+        </div>
+        -->
+        <div>
+          <iframe src="https://stevens0-my.sharepoint.com/personal/ichow_stevens_edu/_layouts/15/embed.aspx?UniqueId=f2a9671f-d936-45fb-850a-132dc959a225" width="480" height="360" frameborder="0" scrolling="yes" allowfullscreen title="vo tinh-ring-2-2-24"></iframe>
+        </div>
+        <br>
+        
+
+        <style>
+          body {
+            font-family: "Open Sans", sans-serif;
+            background: rgb(31, 31, 31);
+            color: rgb(255, 255, 255);
+            margin: 1rem;
+            display: grid;
+          }
+
+          .form-container {
+            background-color: rgb(50,50,50);
+            border-radius: 6px;
+
+          }
+
+          .style-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(154,101,255);
+            border-radius: 5px;
+            background-color: transparent;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+
+          .style-checkbox:before {
+            content: "";
+            background-color: rgb(154,101,255);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .style-checkbox:checked:before {
+            transform: translate(-50%, -50%) scale(1);
+          }
+
+          .style-label {
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            align-items: center;
+            
+          }
+
+    
+          .button-confirm {
+            margin: 50px auto 0 auto;
+            width: 120px;
+            height: 50px;
+            border-radius: 6px;
+            background-color: rgb(107,64,232);
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            border-color: transparent;
+          }
+
+          
+    
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        
+        
+
+    </main>
+	<script src="script.js"></script>
+  </body>
+</html>
